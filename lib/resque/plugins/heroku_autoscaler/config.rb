@@ -1,3 +1,5 @@
+require 'heroku-api'
+
 module Resque
   module Plugins
     module HerokuAutoscaler
