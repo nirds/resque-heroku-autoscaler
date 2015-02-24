@@ -52,7 +52,7 @@ module Resque
 
         attr_writer :api_exceptions
         def api_exceptions
-          @api_exceptions || [Excon::Errors::Error, Heroku::API::Errors::ErrorWithResponse]
+          @api_exceptions || [Excon::Errors::Error]
         end
 
         def reset
